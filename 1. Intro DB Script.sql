@@ -12,7 +12,7 @@ CREATE SEQUENCE sq_idpersona START WITH 1000;
 INSERT INTO persona (Id_persona, Nombres, Apellidos, FechaNacimiento, LicenciaConducir)
 VALUES (sq_idpersona.NEXTVAL, 'Sebastián', 'Contreras', '03/05/1989', 'B');
 
-SELECT * FROM persona;
+SELECT ID_persona, nombres, apellidos, fechanacimiento, licenciaconducir FROM persona;
 
 /*
 SINTAXIS
@@ -26,11 +26,14 @@ CREATE TABLE [nombre de tabla] (
     [nombre atributo] [tipo dato] [PRIMARY KEY, nulo o no nulos]
 );
 
+-- CREAR Sequencias
+CREATE SEQUENCE sq_idpersona START WITH 100;
+
 -- INSERTAR DATOS
 INSERT INTO [NOMBRE TABLA] (COLUMNA1, COLUMNA2, COLUMNA3)
 VALUES (VALOR1, VALOR2, VALOR3)
 
--- CREAR Sequencias
-CREATE SEQUENCE sq_idpersona START WITH 100;
+-- SELECCIONAR DATOS
+SELECT [CAMPOS] FROM [NOMBRE TABLA];
 
 */
