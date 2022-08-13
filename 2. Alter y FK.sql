@@ -12,10 +12,6 @@ CREATE TABLE mascota (
     Nombre_Mascota VARCHAR2(50) NOT NULL,
     ID_Persona NUMBER(4) NOT NULL
     
-    /*constrain: fk_persona --> es llave foránea
-    ( columna ID_Persona -> persona(id_persona)  )
-    */
-    
 )
 
 -- ejecutar alters de llaves primarias
